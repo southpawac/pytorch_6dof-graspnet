@@ -10,5 +10,4 @@ easydict==1.9
 opencv_python==4.2.0.34
 PyYAML==5.3.1
 tensorboardX==2.0
-python-fcl
 rtree
