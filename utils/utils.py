@@ -10,7 +10,7 @@ import torch
 import yaml
 from easydict import EasyDict as edict
 
-GRIPPER_PC = np.load('gripper_models/panda_pc.npy',
+GRIPPER_PC = np.load('grasp/graspnet/gripper_models/panda_pc.npy',
                      allow_pickle=True).item()['points']
 GRIPPER_PC[:, 3] = 1.
 
