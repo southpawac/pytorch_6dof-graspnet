@@ -284,7 +284,7 @@ def get_control_point_tensor(batch_size, use_torch=True, device="cpu"):
       Outputs a tensor of shape (batch_size x 6 x 3).
       use_tf: switches between outputing a tensor and outputing a numpy array.
     """
-    control_points = np.load('./gripper_control_points/panda.npy')[:, :3]
+    control_points = np.load('./grasp/graspnet/gripper_control_points/panda.npy')[:, :3]
     control_points = [[0, 0, 0], [0, 0, 0], control_points[0, :],
                       control_points[1, :], control_points[-2, :],
                       control_points[-1, :]]
