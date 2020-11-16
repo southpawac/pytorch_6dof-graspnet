@@ -65,7 +65,7 @@ class BaseOptions:
             help='gpu ids: e.g. 0  0,1,2, 0,2. use -1 for CPU')
         self.parser.add_argument('--checkpoints_dir',
                                  type=str,
-                                 default='./checkpoints',
+                                 default='/open-world-tamp/grasp/graspnet/checkpoints',
                                  help='models are saved here')
         self.parser.add_argument(
             '--serial_batches',
