@@ -19,6 +19,10 @@ class GraspEstimator:
     def __init__(self, grasp_sampler_opt, grasp_evaluator_opt, opt):
         self.grasp_sampler_opt = grasp_sampler_opt
         self.grasp_evaluator_opt = grasp_evaluator_opt
+
+        self.grasp_sampler_opt.checkpoints_dir = "/open-world-tamp/grasp/graspnet/checkpoints"
+        self.grasp_evaluator_opt.checkpoints_dir = "/open-world-tamp/grasp/graspnet/checkpoints"
+        
         self.opt = opt
         self.target_pc_size = opt.target_pc_size
         self.num_refine_steps = opt.refine_steps
