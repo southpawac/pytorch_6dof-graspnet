@@ -1,7 +1,7 @@
 from __future__ import print_function
 
 import mayavi.mlab as mlab
-from utils import utils, sample
+from grasp.graspnet.utils import utils, sample
 import numpy as np
 import trimesh
 
