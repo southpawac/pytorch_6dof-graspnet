@@ -5,7 +5,7 @@ import math
 import time
 import trimesh.transformations as tra
 import json
-from utils import sample
+from grasp.graspnet.utils import sample
 import torch
 import yaml
 from easydict import EasyDict as edict
